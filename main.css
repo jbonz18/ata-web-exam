@@ -4,3 +4,7 @@ body {
 .jumbotron{
     background-color: rgb(200,175,175, 0.6);
 }
+.audio-buttons{
+    display: flex;
+    justify-content: space-between;
+}
