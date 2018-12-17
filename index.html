@@ -60,40 +60,13 @@
         <audio controls>
         <source src="To Hell with the Devil-[Music Download Paradise Pro].mp3" type="audio/mpeg">
         </audio>
+        <audio controls>
+        <source src="Calling on You-[Music Download Paradise Pro].mp3"audio/mpeg">
+        <audio controls>
+        <source src="Free-[Music Download Paradise Pro].mp3" type="audio/mpeg">
+        </audio>
 
-        <audio src="" controls id="audioPlayer"></audio>           
-        <ul id="playlist">
-            <li class="current-song"><a href="To Hell with the Devil-[Music Download Paradise Pro].mp3">To Hell With The Devil</a></li>
-            <li><a href="Calling on You-[Music Download Paradise Pro].mp3">Calling On You</a></li>
-            <li><a href="Free-[Music Download Paradise Pro].mp3">Free</a></li>
-        </ul>
-        <script src="https://code.jquery.com/jquery-2-2.0.js"></script>
-        <script>
-            audioPlayer();
-            function audioPlayer(){
-                var currentSong = 0;
-                $("#audioPlayer")[0].src = $("#playlist li a")[0];
-                $("#audioPlayer")[0].play();
-                $("#playlist li a").click(function(e){
-                    e.preventDefault();
-                    $("#audioPlayer")[0].src=this;
-                    $("#audioPlayer")[0].play();
-                    $("#playlist li").removeClass("current-song");
-                    currentSong = $(this).parent().index();
-                    $(this).parent().addClass("current-song");
-                });
-
-                $("#audioPlayer")[0].addEventListener("ended", function(){ 
-                    currentSong++;
-                     if(currentSong == $("#playlist li a").lenght)
-                        currentSong = 0;
-                     $("#playlist li").removeClass("current-song");
-                     $("#playlist li:eq("+currentSong+")").addBack("current-song");
-                     $("#audioPlayer")[0].src = $("#playlist li a")[currentSong].href;
-                     $("#audioPlayer")[0].play();
-                });
-        }
-        </script>
+        
 
     </div>
     
