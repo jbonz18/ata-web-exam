@@ -1,3 +1,6 @@
 body {
     background-image: url(../ata-web-exam/stars_on_sky.jpg);
 }
+.jumbotron{
+    background-color: rgb(200,175,175, 0.6);
+}
