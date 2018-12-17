@@ -78,10 +78,13 @@
         <script>
             audioPlayer();
             function audioPlayer(){
-                $("#audioPlayer")[0].src = $("playlist li a")[0];
-                $("audioPlayer")[0].play();
-               alert("hi");
-            }
+                $("#audioPlayer")[0].src = $("#playlist li a")[0];
+                $("#audioPlayer")[0].play();
+                $("#playlist li a").click(function(e){
+                    e.preventDefault();
+                    $("#audioPlayer")[0].src=this;
+                });
+                }
         </script>
        
         
