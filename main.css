@@ -8,3 +8,7 @@ body {
     display: flex;
     justify-content: space-between;
 }
+
+.jumbotron-music{
+    background-color: rgba(226, 44, 144, 0.89) ;
+}
