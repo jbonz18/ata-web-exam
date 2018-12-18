@@ -1,8 +1,8 @@
 body {
-    background-image: url(../ata-web-exam/stars_on_sky.jpg);
+    background-image: url(../ata-web-exam/Soldiers-Under-Command.jpg);
 }
 .jumbotron{
-    background-color:  #be9921dc ;
+    background-image: url(../ata-web-exam/stars_on_sky.jpg);
 }
 .audio-buttons{
     display: flex;
