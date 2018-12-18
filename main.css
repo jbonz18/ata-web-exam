@@ -9,6 +9,6 @@ body {
     justify-content: space-between;
 }
 
-.container my-music{
-    background-color: rgba(226, 44, 144, 0.89) ;
+.jumbotron-my-music{
+    background-color: #2c4de2e3 ;
 }
